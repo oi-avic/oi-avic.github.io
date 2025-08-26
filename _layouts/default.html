@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: "$$", right: "$$", display: true},
+          {left: "$", right: "$", display: false}
+        ]
+      });
+    });
+	<title>set-pagef-color</title>
+  </script>
+  <style>
+    footer {
+      background-color: #8899bb;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px 0;
+    }
+    header {
+      background-color: #8899bb;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav>
+    <ul style="list-style: none; display: flex; gap: 1em; padding: 0; margin: 0;">
+      <li><a href="{{ 'avic-oi.github.io' | relative_url }}">首页</a></li>
+      <li><a href="{{ '/contact-develop' | relative_url }}">联系与开发</a></li>
+    </ul>
+  </nav>
+</header>
+  <main>
+    {{ content }}
+  </main>
+  <footer>
+    &copy; {{ site.time | date: "%Y" }} {{ site.title }}
+  </footer>
+</body>
+</html>
