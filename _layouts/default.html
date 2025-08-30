@@ -17,27 +17,32 @@
         ]
       });
     });
-	<title>set-page-color</title>
   </script>
   <style>
-    footer {
-      background-color: #8899bb;
-      color: #ffffff;
-      text-align: center;
-      padding: 20px 0;
+    .logo-img {
+      height: 30px;
+      width: auto;
     }
     header {
       background-color: #8899bb;
       color: #ffffff;
       text-align: center;
-      padding: 20px 0;
+      padding: 40px 0;
+    } 
+   footer {
+      background-color: #8899bb;
+      color: #ffffff;
+      text-align: center;
+      padding: 70px 0;
     }
   </style>
 </head>
 <body>
 <header>
   <nav>
-    <ul style="list-style: none; display: flex; gap: 1em; padding: 0; margin: 0;">
+
+    <ul style="list-style: none; display: flex; gap: 1em; padding: 0; margin: 0;">	
+      <li><a href="{{ '/' | relative_url }}"><img src="{{ '/photos/logo1.png' | relative_url }}" alt="网站Logo" class="logo-img"> alt="网站Logo" class="logo-img"> alt="网站Logo" class="logo-img"></a></li>
       <li><a href="{{ '/' | relative_url }}">首页</a></li>
       <li><a href="{{ '/contact-develop' | relative_url }}">联系与开发</a></li>
     </ul>
