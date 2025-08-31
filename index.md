@@ -5,4 +5,4 @@ title: 首页
 
 # 站点首页
 
-![logo](\photos\logo1.png)54545  454545  115115
+![logo](\photos\logo1.png)
