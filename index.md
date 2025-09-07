@@ -6,7 +6,8 @@ title: 首页
 
 <div style="text-align: center;">
 # 首页 
-  
-![logo](\photos\logo1-min.png)
 </div>
 
+<div style="text-align: center;">
+  ![logo](\photos\logo1-min.png)
+</div>
