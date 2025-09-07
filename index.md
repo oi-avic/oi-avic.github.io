@@ -9,6 +9,6 @@ title: 首页
 </div>
 
 <div style="text-align: center;">
-<img src="{{ '/photos/logo1.png' | relative_url }}" alt="网站Logo" height="700" width="700">
+<img src="{{ '/photos/logo1.png' | relative_url }}" alt="网站Logo" height="350" width="350">
 </div>
 
