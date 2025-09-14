@@ -47,16 +47,16 @@
       color: #333;
     }
     
-    nav {
-        padding:0 20px;
-    }
+
     .container {
       width: 100%;
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 20px;
     }
-    
+        nav {
+        padding:0 20px;
+    }
     nav ul {
       list-style: none;
       display: flex;
@@ -71,8 +71,20 @@
     nav li {
       margin: 0;
     }
+        .logo-link {
+      display: inline-block;
+      padding: 0;
+      background-color: transparent;
+      border: none;
+    }
     
-    nav a {
+    .logo-link:hover {
+      background-color: transparent;
+      transform: none;
+      box-shadow: none;
+    }
+    
+    .nav-b {
       display: inline-block;
       padding: 10px 20px;
       background-color: rgba(255, 255, 255, 0.2);
@@ -84,7 +96,7 @@
       border: 1px solid rgba(255, 255, 255, 0.3);
     }
     
-    nav a:hover {
+    .nav-b:hover {
       background-color: rgba(255, 255, 255, 0.3);
       transform: translateY(-2px);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -97,7 +109,7 @@
         gap: 0.8em;
       }
       
-      nav a {
+      .nav-b {
         padding: 8px 16px;
         font-size: 0.9rem;
       }
@@ -113,7 +125,7 @@
         gap: 0.5em;
       }
       
-      nav a {
+     .nav-b {
         width: 100%;
         text-align: left;
         padding: 10px;
@@ -126,9 +138,9 @@
   <nav>
 
     <ul style="list-style: none; display: flex; gap: 1em; padding: 0; margin: 0;">	
-      <li><a href="{{ '/' | relative_url }}"><img src="{{ '/photos/logo1.png' | relative_url }}" alt="网站Logo" class="logo-img"></a></li>
-      <li><a href="{{ '/' | relative_url }}">首页</a></li>
-      <li><a href="{{ '/contact-develop' | relative_url }}">联系与开发</a></li>
+      <li><a href="{{ '/' | relative_url }}" class="logo-link"><img src="{{ '/photos/logo1.png' | relative_url }}" alt="网站Logo" class="logo-img"></a></li>
+      <li><a href="{{ '/' | relative_url }}" class="nav-b">首页</a></li>
+      <li><a href="{{ '/contact-develop' | relative_url }}" class="nav-b">联系与开发</a></li>
     </ul>
   </nav>
 </header>
